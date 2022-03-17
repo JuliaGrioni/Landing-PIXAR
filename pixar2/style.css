@@ -1,0 +1,437 @@
+:root{
+    --negro:rgba(29,29,29,.7);
+    --negrooscuro: #1d1d1d;
+    --monserrat: 'Montserrat', sans-serif;
+    --gris: rgba(29,29,29,.3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--monserrat);
+}
+
+.wrapper{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+
+header{
+    background-color: white;
+    color: var(--negrooscuro);
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+p{
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--negrooscuro);
+
+}
+.logo {
+    margin-right: 50px;
+    display: block;
+
+}
+.menu {
+    list-style: none;
+    text-transform: uppercase;   
+}
+.menu li{
+    font-size: 15px;
+    letter-spacing: 1px; 
+    position: relative;
+}
+.menu li:not(last-child){
+    margin-right: 18px;
+}
+.menu li a:hover{
+    color: var(--gris);
+    transition: 2s;
+}
+.menu li a {
+    text-decoration: none;
+    color: var(--negrooscuro);
+}
+.menu li .cart{
+    color: white;
+}
+.menu li:hover .submenu {
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+}
+.menu li:last-child{
+    display: none;
+}
+/*submenu*/
+.submenu {
+    position: absolute;
+    list-style: none;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.submenu li{
+    padding: 8px 8px 8px 8px;
+    font-size: 12px;
+}
+
+.submenu li:hover{
+    color: gray;
+    cursor: pointer;
+}
+/*--- --- */
+.cabecera{
+    background-image: url(img/fondo.jpeg);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    height: 600px;
+    position: relative;
+}
+
+.disney{
+    width:300px;
+    position: absolute;
+    top: 60px;
+    left: 340px;
+}
+.personajes{
+    margin-top: 100px;
+}
+.tercios{
+    width: 20%; 
+      
+}
+.box{
+    gap:30px;
+}
+
+.tres{
+    width: 100%;
+    margin: auto;
+}
+.final a {
+    font-size: 22px;
+    margin-right: 15px;
+    color: var(--negrooscuro);
+}
+.final a:last-child{
+    margin-right: 0;
+}
+.iconos{
+    margin-top: 200px;
+}
+.iconoy {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.iconos:hover a {
+    color: var(--gris);
+}
+.iconoy:hover a{
+    color: var(--gris);
+}
+.iconos a:hover{
+    color: var(--negrooscuro);
+}
+.pie a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--negro);
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--gris);
+    padding-right: 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+.pie a:hover{
+    color: var(--gris);
+}
+.footer{
+    margin-top: 20px;
+}
+.footer h5{
+    color: var(--negro);
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.far.fa-copyright{
+    font-size: 13px;
+    color: var(--negro);
+}
+/* cars*/
+.cabecera.car {
+    background-image: url(img/ctoons_head.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.cartoon{
+    height: 500px;
+}
+.car h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+.cuadricula{
+    gap: 70px;
+    padding-top: 100px;
+    flex: 1;
+}
+.cuadro{
+    width: 20%;
+}
+.cuadro img{
+    width: 100%; 
+}
+h3{
+    color: var(--negro);
+    font-size: 12px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 30px;
+}
+h5{
+    text-transform: capitalize;
+    color: var(--negrooscuro);
+    font-size: 35px;
+    font-weight: 400;
+}
+p.info.j{
+    color: var(--negro);
+    text-transform: none;
+    font-weight: 300;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.arreglo{
+    gap: 30px;
+}
+.mitad{
+    margin-top: 100px;
+    flex:1;
+    width: 50%;
+}
+.mitad .txt{
+    margin-top: 0;
+}
+.mitad img {
+    width: 100%;    
+}
+
+/*flex*/
+.flex{
+    display: flex;
+}
+.jbetween{
+    justify-content: space-between;
+}
+.acenter{
+    align-items:  center;
+}
+.jcenter{
+    justify-content: center;
+}
+.jstart {
+    justify-content: flex-start;
+}
+.sbetween{
+    justify-content: space-between;
+}
+.saround{
+    justify-content: space-around;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+/*responsive*/
+
+@media (max-width: 1000px){
+    .wrapper{
+        width: 90%;
+        justify-content: space-between;
+    }
+    .menu li{
+        display: none;
+    }
+    .menu li:last-child{
+        display: inline-block;
+    }
+    .cabecera {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .disney{
+        width: 200px;
+        position: absolute;
+        top: 60px;
+        left: 180px;
+    }
+    .box{
+        width: 100%;
+    }
+    .final{
+        width: 95%;
+    }
+    footer{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .wrapper{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu li{
+        display: none;
+    }
+    .menu li:last-child{
+        display: inline-block;
+    }
+    .cabecera {
+        width: 100%;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .disney{
+        width: 450px;
+        position: absolute;
+        top: 60px;
+        left: 30px;
+    }
+    .box{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .tercios{
+        width: 100%;
+    }
+    .final{
+        width: 95%;
+    }
+    footer{
+        width: 100%;
+    }
+    .pie{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1000px){
+    .wrapper{
+        width: 80%;
+        justify-content: space-between;
+    }
+    .menu li{
+        display: none;
+    }
+    .menu li:last-child{
+        display: inline-block;
+    }
+    .cabecera.car {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .cartoon h1{
+        width: 50%;
+        font-size: 40px;
+    }
+    .cuadricula{
+        flex: 1;
+        width: 100%;
+        justify-content: center;
+    }
+    .cuadro{
+        width: 40%;
+    }
+    
+    .mitad {
+        width: 100%;
+        flex: 1;
+    }
+    .arreglo {
+        flex:1;
+        flex-direction: column;
+        
+    }
+    .arreglo img{
+        width: 100%;
+    }
+    
+    .final{
+        width: 95%;
+    }
+    footer{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px){
+    .wrapper{
+        width: 100%;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .menu li{
+        display: none;
+    }
+    .menu li:last-child{
+        display: inline-block;
+    }
+    .cabecera.car {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .cartoon h1{
+        width: 50%;
+        font-size: 45px;
+    }
+    .cuadricula{
+        flex: 1;
+        width: 100%;
+        justify-content: center;
+    }
+    .cuadro{
+        width: 90%;
+    }
+    .final{
+        width: 95%;
+    }
+    .mitad {
+        width: 100%;
+    }
+    .arreglo{
+        flex:1;
+        flex-direction: column;
+    }
+    footer{
+        width: 100%;
+    }
+}
